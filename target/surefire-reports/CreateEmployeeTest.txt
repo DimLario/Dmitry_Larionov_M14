@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: CreateEmployeeTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.878 s <<< FAILURE! - in CreateEmployeeTest
+createEmployeeTestHashMapExample  Time elapsed: 0.537 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+XML path data.name doesn't match.
+Expected: Vasia Pupkin
+  Actual: 
+
+	at CreateEmployeeTest.createEmployeeTestHashMapExample(CreateEmployeeTest.java:33)
+

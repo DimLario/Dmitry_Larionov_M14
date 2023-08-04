@@ -1,0 +1,5 @@
+GetBookByIDTest.class
+AllBooksEndpointTest.class
+CreateEmployeeTest.class
+AuthorizationErrorTest.class
+AllMoviesEndpointTest.class
