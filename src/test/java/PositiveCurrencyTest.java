@@ -14,6 +14,11 @@ public class PositiveCurrencyTest {
         System.out.println(response.asString());
         response.then().statusCode(200);
         response.then().body("success", equalTo(true));
+        response.then().body("timestamp", notNullValue());
+        response.then().body("source", equalTo("USD"));
+        response.then().body("quotes", notNullValue());
+
+
     }
 
     @Test

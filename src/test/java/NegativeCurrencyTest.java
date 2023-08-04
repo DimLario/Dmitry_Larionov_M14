@@ -30,4 +30,12 @@ public class NegativeCurrencyTest {
         response.then().statusCode(200);
         response.then().body("error.info", equalTo("You have entered an invalid date. [Required format: date=YYYY-MM-DD]"));
     }
+    @Test
+    public void wrongCurrencyTest(){
+        response = given().header("apikey", Consts.API_KEY).contentType("application/json")
+                .get(Consts.URL + Consts.RECENT_RATE_ENDPOINT + "&source=USD&currencies=CAA");
+        System.out.println(response.asString());
+        response.then().statusCode(200);
+        response.then().body("error.info", equalTo("You have provided one or more invalid Currency Codes. [Required format: currencies=EUR,USD,GBP,...]"));
+    }
 }
